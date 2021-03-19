@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>DPS Calculation</h1>
+    <form
+      accept-charset="UTF-8"
+      id="dps-calculator-form"
+      style="display: block"
+    >
+      <div>
+        <div class="form-item" id="edit-dps-initial-amount-wrapper">
+          <label for="edit-dps-initial-amount">Initial Amount (BDT): </label>
+          <input
+            type="text"
+            maxlength="128"
+            name="dps_initial_amount"
+            id="edit-dps-initial-amount"
+            size="20"
+            value=""
+            class="form-text"
+          />
+        </div>
+        <div class="form-item" id="edit-dps-annual-interest-rate-wrapper">
+          <label for="edit-dps-annual-interest-rate"
+            >Annual Interest Rate (%):
+          </label>
+          <input
+            type="text"
+            maxlength="128"
+            name="dps_annual_interest_rate"
+            id="edit-dps-annual-interest-rate"
+            size="20"
+            value=""
+            class="form-text"
+          />
+        </div>
+        <div class="form-item" id="edit-dps-calculate-for-number-wrapper">
+          <label for="edit-dps-calculate-for-number"
+            >Calculate for Number:
+          </label>
+          <input
+            type="text"
+            maxlength="128"
+            name="dps_calculate_for_number"
+            id="edit-dps-calculate-for-number"
+            size="20"
+            value=""
+            class="form-text"
+          />
+        </div>
+        <div class="form-item" id="edit-dps-calculate-for-duration-wrapper">
+          <select
+            name="dps_calculate_for_duration"
+            class="form-select"
+            id="edit-dps-calculate-for-duration"
+          >
+            <option value="months">Months</option>
+          </select>
+        </div>
+        <input
+          type="submit"
+          name="op"
+          id="edit-dps-submit"
+          value="Calculate"
+          class="form-submit"
+        />
+        <input
+          type="submit"
+          name="op"
+          id="edit-dps-reset"
+          value="Reset"
+          class="form-submit"
+        />
+        <input
+          type="hidden"
+          name="form_build_id"
+          id="form-1a77e661b7ee8c7df6ed73ab7e4bea25"
+          value="form-1a77e661b7ee8c7df6ed73ab7e4bea25"
+        />
+        <input
+          type="hidden"
+          name="form_id"
+          id="edit-dps-calculator-form"
+          value="dps_calculator_form"
+        />
+      </div>
+    </form>
+    <div id="block-calculator-dps_calculator"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./dps.js"></script>
+  </body>
+</html>

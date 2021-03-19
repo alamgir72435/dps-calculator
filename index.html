@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- action="http://localhost/finedu/en/calculator" -->
+    <form accept-charset="UTF-8" id="savings-calculator-form">
+      <div>
+        <div class="form-item" id="edit-standard-initial-amount-wrapper">
+          <label for="edit-standard-initial-amount"
+            >Initial Amount (BDT):
+          </label>
+          <input
+            type="text"
+            maxlength="128"
+            name="standard_initial_amount"
+            id="edit-standard-initial-amount"
+            size="20"
+            value=""
+            class="form-text"
+          />
+        </div>
+        <div class="form-item" id="edit-standard-annual-interest-rate-wrapper">
+          <label for="edit-standard-annual-interest-rate"
+            >Annual Interest Rate (%):
+          </label>
+          <input
+            type="text"
+            maxlength="128"
+            name="standard_annual_interest_rate"
+            id="edit-standard-annual-interest-rate"
+            size="20"
+            value=""
+            class="form-text"
+          />
+        </div>
+        <div class="form-item" id="edit-standard-interest-calculated-wrapper">
+          <label for="edit-standard-interest-calculated"
+            >Interest Calculated:
+          </label>
+          <select
+            name="standard_interest_calculated"
+            class="form-select"
+            id="edit-standard-interest-calculated"
+          >
+            <option value="12">Monthly</option>
+            <option value="4">Quaterly</option>
+            <option value="2">Half Yearly</option>
+            <option value="1">Yearly</option>
+          </select>
+        </div>
+        <div class="form-item" id="edit-standard-calculate-for-number-wrapper">
+          <label for="edit-standard-calculate-for-number"
+            >Calculate for Number:
+          </label>
+          <input
+            type="text"
+            maxlength="128"
+            name="standard_calculate_for_number"
+            id="edit-standard-calculate-for-number"
+            size="20"
+            value=""
+            class="form-text"
+          />
+        </div>
+        <div
+          class="form-item"
+          id="edit-standard-calculate-for-duration-wrapper"
+        >
+          <select
+            name="standard_calculate_for_duration"
+            class="form-select"
+            id="edit-standard-calculate-for-duration"
+          >
+            <option value="months">Months</option>
+          </select>
+        </div>
+        <input
+          type="submit"
+          name="op"
+          id="edit-standard-submit"
+          value="Calculate"
+          class="form-submit"
+        />
+        <input
+          type="submit"
+          name="op"
+          id="edit-standard-reset"
+          value="Reset"
+          class="form-submit"
+        />
+        <input
+          type="hidden"
+          name="form_build_id"
+          id="form-ca144abd4557680de8fd8770097eb21d"
+          value="form-ca144abd4557680de8fd8770097eb21d"
+        />
+        <input
+          type="hidden"
+          name="form_id"
+          id="edit-savings-calculator-form"
+          value="savings_calculator_form"
+        />
+      </div>
+    </form>
+    <div class="result"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
